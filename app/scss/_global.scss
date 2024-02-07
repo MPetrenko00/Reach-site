@@ -1,0 +1,55 @@
+html, body {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: 'Lato';
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 26px;
+}
+
+.wrapper{
+	background-color: $main-color;
+}
+
+
+.container {
+	// от 0px 
+	padding: 0 30px;
+
+	@media (min-width: $breakpoint-md) {
+		// от 767px
+		max-width: 708px;
+		margin: 0 auto;
+	}
+
+	@media (min-width: $breakpoint-lg) {
+		// от 1024px 
+		max-width: 964px;
+	}
+
+	@media (min-width: $breakpoint-xl) {
+		// от 1440px 
+		max-width: 1380px;
+	}
+
+	@media (min-width: $breakpoint-xxl) {
+		// от 1920px 
+		max-width: 1660px;
+	}
+}
+
+.hidden {
+	width: 0;
+	height: 0;
+	position: absolute;
+	z-index: -1;
+}
+
+.main-title {
+	font-weight: 700;
+	font-size: 38px;
+	line-height: 46px;
+	color: $white-color;
+}
