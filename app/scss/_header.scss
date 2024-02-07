@@ -38,7 +38,7 @@
     align-items: center;
     padding: var(--padding);
     border-radius: 24px;
-    background: #ECF3F7;
+    background: $blue-text-color;
     transition: background 0.25s;
 
     &:focus-within{
@@ -49,9 +49,14 @@
 &__search-icon{
     width: 24px;
     height: 24px;
-    color: $blue-button-color;
+    fill: $blue-text-color;
 }
 
+&__profile-icon{
+    width: 30px;
+    height: 30px;
+    fill: $grey-color;
+}
 &__search-input {
     font-size: 16px;
     margin-left: var(--padding);
