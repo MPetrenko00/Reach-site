@@ -1,8 +1,7 @@
 .header {
     color: $grey-color;
 
-&__container {
-}
+//&__container {}
 
 &__main {
     min-height: 100vh;
@@ -11,8 +10,7 @@
     justify-content: space-between;
 }
 
-&__head {
-}
+//&__head {}
 
 &__social {
     display: flex;
@@ -25,18 +23,13 @@
     display: flex;
     gap: 30px;
 }
-.header-social__item {
-}
+//.header-social__item {}
 
-.header-social {
-}
+//.header-social {}
 
-&__item-work {
-}
-.active {
-}
-&__logo {
-}
+//&__item-work {}
+//.active {}
+//&__logo {}
 
 &__search {
     --padding: 8px;
