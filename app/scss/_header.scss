@@ -27,8 +27,16 @@
 
 //.header-social {}
 
-//&__item-work {}
-//.active {}
+&__item-work {
+    &.active{
+        color: $black-color;
+    }
+
+    &:hover{
+        color: $orange-color;
+    }
+}
+
 //&__logo {}
 
 &__search {
@@ -40,6 +48,8 @@
     border-radius: 24px;
     background: $blue-text-color;
     transition: background 0.25s;
+    position: relative;
+    left: 12%;
 
     &:focus-within{
         background: #dce5eb;
