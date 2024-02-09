@@ -1,6 +1,6 @@
 .social {
 
-  
+    margin-top: 32px;
 
     &__container {
         display: flex;
@@ -16,10 +16,11 @@
 
     &__user {
         background: $white-color;
-        margin-top: 32px;
         padding: 20px;
-        border-radius: 8px;
+        border-radius: 10px;
         margin-bottom: 30px;
+        height: 100%;
+        max-width: 264px;
     }
 
     &__image {
@@ -27,11 +28,11 @@
         color: $green-alt-text;
     }
 
-    &__inner {}
+    //&__inner {}
 
-    &__inner-name {}
+    //&__inner-name {}
 
-    &__inner-prof {}
+    //&__inner-prof {}
 
 
     &__input-group {
@@ -85,4 +86,48 @@
         height: 18px;
         color: $green-color;
     }
+
+    &__post {
+        max-width: 680px;
+        height: 100%;
+        background: $white-color;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 20px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+
+    &__post-image {
+        height: 252px;
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    &__post-text {
+        margin-bottom: 20px;
+    }
+
+    &__text-hello {
+    }
+
+    &__text-inf {
+    }
+
+    &__post-button {
+        color: $orange-color;
+        background: $orange-soft-color;
+        padding: 8px 75px;
+        border-radius: 50px;
+
+        &:hover{
+            color: $white-color;
+            background: $orange-color;
+        }
+
+    }
+
+
+
 }
