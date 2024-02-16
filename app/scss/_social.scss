@@ -1,6 +1,7 @@
 .social {
 
     margin-top: 32px;
+  
 
     &__container {
         display: flex;
@@ -45,12 +46,16 @@
         align-items: center;
         height: 30px;
         padding: 10px 15px;
-        background-color: aqua;
+        background-color: $green-soft-color;
         border: none;
         outline: none;
         border-radius: 50px;
         overflow: hidden;
         cursor: pointer;
+    }
+
+    &__user-button-text {
+        color: $green-color;
     }
 
    
@@ -59,7 +64,7 @@
     &__pencil-icon {
        width: 18px;
        height: 18px;
-       color: $grey-color;
+       fill: $green-soft-color;
        margin-left: 60px;
     }
 
