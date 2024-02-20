@@ -129,4 +129,56 @@
     }
 
 
+    &__stat {
+        max-width: 264px;
+        height: 100%;
+        background: $white-color;
+        padding: 10px  10px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+    &__stat-inner {
+    }
+    &__stat-item {
+        
+    }
+    &__stat-item-page {
+        display: flex;        
+    }
+    &__stat-trend {
+        width: 22px;
+       height: 22px;
+
+    }
+    &__stat-user {
+        width: 22px;
+       height: 22px;
+    }
+
+    &__span-trend{
+        font-size: 14px;
+    }
+
+    &__span-prof{
+        font-size: 14px;
+    }
+
+    &__stat-button {
+        color: $blue-button-color;
+        background: $blue-text-color;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 30px;
+        padding: 10px 15px;
+        border-radius: 50px;
+
+        &:hover{
+            color: $white-color;
+            background: $blue-button-hover;
+        }
+    }
+
+
 }
