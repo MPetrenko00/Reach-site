@@ -173,11 +173,46 @@
         height: 30px;
         padding: 10px 15px;
         border-radius: 50px;
+        margin-top: 16px;
 
         &:hover{
             color: $white-color;
             background: $blue-button-hover;
         }
+    }
+
+
+
+    &__rec {
+        max-width: 264px;
+        height: 100%;
+        background: $white-color;
+        border-radius: 10px;
+        padding: 20px;
+    }
+    &__rec-inner {
+    }
+    &__rec-item {
+       justify-content: space-between;
+    }
+
+    &__rec-item-user {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    &__rec-image {
+    }
+    &__rec-inner-name {
+        font-size: 14px;
+    }
+    &__inner-prof {
+        font-size: 12px;
+    }
+    &__rec-user {
+        width: 24px;
+       height: 24px;
     }
 
 
