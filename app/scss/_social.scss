@@ -76,8 +76,8 @@
        margin-left: 60px;
     }
 
-    &__post {
-        max-width: 680px;
+    &__info-post {
+       max-width: 680px;
         height: 100%;
         background: $white-color;
         display: flex;
@@ -85,24 +85,24 @@
         flex-direction: column;
         padding: 20px;
         border-radius: 10px;
-        margin-bottom: 20px;
+        margin-bottom: 20px; 
     }
 
-    &__post-image {
+    &__info-post-image {
         height: 252px;
         max-width: 100%;
         margin-bottom: 20px;
     }
 
-    &__post-text {
+    &__info-post-text {
         margin-bottom: 20px;
     }
 
-    //&__text-hello {}
+    //&__info-text-hello {}
 
-    //&__text-inf {}
+    //&__info-text {}
 
-    &__post-button {
+    &__info-post-button {
         color: $orange-color;
         background: $orange-soft-color;
         padding: 8px 75px;
@@ -114,6 +114,76 @@
         }
 
     }
+
+    &__post {
+        max-width: 680px;
+        height: 100%;
+        background: $white-color;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        border-radius: 10px;
+        margin-bottom: 20px; 
+    }
+    
+    &__post-header{
+        display: flex;
+    }
+
+
+    &__post-header-text {}
+                
+    &__post-user-name {
+    }
+    &__post-user-nik {
+    }
+    &__post-dot {
+    }
+
+
+    &__post-dot{
+        width: 4px;
+        height: 19px;
+        fill: $green-alt-text;
+    }
+
+    &__post-inner{
+        display: flex;
+    }
+
+    &__post-image{
+        margin-left: 22px;
+    }
+
+    &__post-text{
+        
+        &.open{
+            overflow: unset;
+            max-height: unset;
+        }
+    }
+
+    &__post-text-hello{
+        column-count: 2;
+        max-height: 100px;
+        overflow: hidden;
+    }
+
+    &__post-event{
+        color: $orange-color;
+        text-decoration: none;
+    }
+
+
+    &__post-icon{
+        width: 22px;
+        height: 22px;
+        fill: $white-color;
+        margin-right: 24px;
+    }
+
+
+
 
     &__feed {
         max-width: 264px;
@@ -149,8 +219,8 @@
     }
 
 
-    &__stat-inner {}
-    &__stat-item {}
+    //&__stat-inner {}
+   // &__stat-item {}
 
 
     &__stat-item-page {
@@ -191,7 +261,7 @@
         }
     }
 
-
+    //a лінк рек
 
     &__rec {
         max-width: 264px;

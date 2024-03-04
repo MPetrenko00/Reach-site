@@ -1,6 +1,5 @@
 .header {
     background: $white-color;
-    color: $grey-color;
     box-shadow:  0 -7px 20px -10px rgba(0, 0, 0, .5);
 
 //&__container {}
@@ -29,6 +28,7 @@
 //.header-social {}
 
 &__item-work {
+    color: $grey-color;
     &.active{
         color: $black-color;
     }
@@ -68,6 +68,8 @@
     height: 30px;
     fill: $grey-color;
 }
+
+
 &__search-input {
     font-size: 16px;
     margin-left: var(--padding);
