@@ -50,9 +50,11 @@
     
 
     &__user-button {
-        display: flex;
+        display: inline-flex;
         align-items: center;
-        height: 30px;
+        gap: 90px;
+        max-width: 100%;
+        height: 34px;
         padding: 10px 15px;
         background-color: $green-soft-color;
         border: none;
@@ -63,9 +65,9 @@
     }
 
     &__user-button-text {
+        font-size: 14px;
         color: $green-color;
     }
-
    
     
 
@@ -73,7 +75,6 @@
        width: 18px;
        height: 18px;
        fill: $green-soft-color;
-       margin-left: 60px;
     }
 
     &__info-post {
@@ -125,14 +126,28 @@
         border-radius: 10px;
         margin-bottom: 20px; 
     }
-    
+
     &__post-header{
         display: flex;
+        margin-bottom: 24px;
     }
 
+    &__post-clock {
+        display: flex;
+        align-items: center;
+        gap:4px;
+    }
+    &__post-icon-clock {
+        width: 17px;
+        height: 17px;
+    }
+
+    &__post-clock-text{
+        color: $grey-alt-text;
+    }
 
     &__post-header-text {}
-                
+
     &__post-user-name {
     }
     &__post-user-nik {
@@ -149,6 +164,7 @@
 
     &__post-inner{
         display: flex;
+        margin-bottom: 24px;
     }
 
     &__post-image{
@@ -156,7 +172,6 @@
     }
 
     &__post-text{
-        
         &.open{
             overflow: unset;
             max-height: unset;
