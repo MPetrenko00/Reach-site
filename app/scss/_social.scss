@@ -129,7 +129,34 @@
 
     &__post-header{
         display: flex;
+        justify-content: space-between;
         margin-bottom: 24px;
+    }
+
+    &__post-header-prof{
+        display: flex;
+    }
+
+    &__post-header-image{
+        margin-right: 14px;
+    }
+
+    &__post-dots {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        cursor: pointer;
+        gap: 2px;
+    }
+
+    &__post-dot {
+        height: 4px;
+        width: 4px;
+        background: $grey-alt-text;
+        border-radius: 50%;
+        display: inline-block;
+        
     }
 
     &__post-clock {
@@ -146,20 +173,20 @@
         color: $grey-alt-text;
     }
 
-    &__post-header-text {}
+    &__post-header-text {
+        align-items: center;
+    }
 
     &__post-user-name {
     }
     &__post-user-nik {
+        display: flex;
+        align-items: center;
+        gap: 4px;
     }
-    &__post-dot {
-    }
-
-
-    &__post-dot{
-        width: 4px;
-        height: 19px;
-        fill: $green-alt-text;
+    
+    &__post-nik {
+        color: $grey-alt-text;
     }
 
     &__post-inner{
