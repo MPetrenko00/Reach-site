@@ -62,7 +62,7 @@
 						 
 						 <div class="social__input-group">
 						  <button class="social__user-button">
-							  <span class="social__user-button-text">Create a post</span>
+							  <a class="social__user-button-text" id="open_modal">Create a post</a>
 							  <svg href="#" class="social__pencil-icon">
 								  <use href="images/sprite.svg#pencil_icon"></use>
 							  </svg>
@@ -70,6 +70,18 @@
 						 </div>
 				  </div>
 
+                   <div class="social__modal" id="modal">
+                        <div class="social__modal-container">
+							<div class="social__modal-body" id="modal_body">
+								<p>ЛОХ</p>
+								<form action="">
+									<input class="social__modal-input"  type="text">
+									<button class="social__modal-btn">Ну ОК</button>
+								</form>
+								<div class="social__modul-close" id="close_modal">&#10006</div>
+							</div>
+						</div>
+				   </div>
 
 				  <div class="social__stat">
 					<h3 class="social__stat-inner">Statistics</h3>

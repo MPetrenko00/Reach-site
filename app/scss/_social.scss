@@ -77,6 +77,76 @@
        fill: $green-soft-color;
     }
 
+    &__modal{
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        left: 0;
+        top: 0;
+        background-color: transparent;
+        z-index: 2;
+        transform: translateY(-44.5%) scale(0);
+        transition: .4s ease-in-out;
+
+        &.active{
+            transform: translateY(0%) scale(100%);
+            background-color: rgba(95, 95, 95, .8);
+        }
+    }
+
+    &__modal-container{
+        display: flex;
+        width: 100%;
+        height: 100%;
+    }
+
+    &__modal-body{
+        margin: auto;
+        width: 500px;
+        background-color: $white-color;
+        border-radius: 10px;
+        text-align: center;
+        padding: 100px 15px 110px 15px;
+        position: relative;
+
+    }
+
+
+    &__modal-input{
+        display: block;
+        margin: 25px auto 0px auto;
+        width: 330px;
+        padding: 16px 20px;
+        background: #bee5ff;
+        border-radius: 10px;
+        border: none;
+        font-size: 18px;
+        color: #b0d2e2;
+
+        &:focus{
+            outline: none;
+        }
+    }
+
+    &__modal-btn{
+        cursor: pointer;
+        display: block;
+        padding: 10px 5px;
+        border-radius: 10px;
+        border: none;
+        color: aqua;
+    }
+
+    &__modal-close{
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+
+    
     &__info-post {
        max-width: 680px;
         height: 100%;
@@ -177,8 +247,8 @@
         align-items: center;
     }
 
-    &__post-user-name {
-    }
+   // &__post-user-name {
+   // }
     &__post-user-nik {
         display: flex;
         align-items: center;
