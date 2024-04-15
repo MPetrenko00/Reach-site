@@ -4,6 +4,16 @@ const openModal = document.getElementById('open_modal');
 const closeModal = document.getElementById('close_modal');
 const Modal = document.getElementById('modal');
 
+const textarea = document.getElementById("textarea");
+
+textarea.addEventListener("keyup", e =>{
+
+textarea.style.height = "110px";
+
+let scHeight = e.target.scrollHeight; textarea.style.height = '${scHeight}px';
+
+})
+
 event1.onclick = function(){
 
   if(content.classList.contains("open")){

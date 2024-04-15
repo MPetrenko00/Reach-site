@@ -90,7 +90,7 @@
 
         &.active{
             transform: translateY(0%) scale(100%);
-            background-color: rgba(95, 95, 95, .8);
+            background-color: rgba(0, 0, 0, 0.4);
         }
     }
 
@@ -102,49 +102,104 @@
 
     &__modal-body{
         margin: auto;
-        width: 500px;
+        width: 556px;
         background-color: $white-color;
         border-radius: 10px;
         text-align: center;
-        padding: 100px 15px 110px 15px;
+        padding: 10px;
         position: relative;
 
     }
 
 
-    &__modal-input{
-        display: block;
-        margin: 25px auto 0px auto;
-        width: 330px;
-        padding: 16px 20px;
-        background: #bee5ff;
-        border-radius: 10px;
-        border: none;
-        font-size: 18px;
-        color: #b0d2e2;
 
-        &:focus{
-            outline: none;
+
+
+
+    &__modal-cross{
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        width: 24px;
+        height: 24px;
+        cursor: pointer;
+       
+
+        &::before{
+            content: "";
+            position: absolute;
+            top: 21px;
+            left: 10px;
+            width: 16px;
+            height: 2px;
+            background: $grey-color;
+            transform: rotate(45deg);
+        }
+
+        &::after{
+            content: "";
+            position: absolute;
+            top: 21px;
+            left: 10px;
+            width: 16px;
+            height: 2px;
+            background: $grey-color;
+            transform: rotate(-45deg);
         }
     }
+
+
+    &__modal-textarea{
+        width: 100%;
+        height: 100px;
+        padding: 10px;
+        font-size: 16px;
+        margin-top: 8px;
+        border-radius: 5px;
+        outline: none;
+        resize: none;
+        border-color: none;
+        max-width: 300px;
+
+        &:focus{
+            border-color: $grey-soft-color;
+            border-radius: 1px;
+            padding: 14px;
+        }
+
+        &:valid{
+            border-color: $grey-soft-color;
+            border-radius: 1px;
+            padding: 14px;
+        }
+
+        &::-webkit-scrollbar{
+            width: 0px;
+        }
+    }
+
+     &__modal-bttns{
+        display: flex;
+        align-items: center;
+     }
 
     &__modal-btn{
         cursor: pointer;
         display: block;
-        padding: 10px 5px;
-        border-radius: 10px;
+        padding: 8px 72px;
+        border-radius: 5px;
         border: none;
-        color: aqua;
+        color: $black-color;
     }
 
-    &__modal-close{
-        position: absolute;
-        top: 15px;
-        right: 15px;
-        font-size: 20px;
+    &__modal-btnn{
         cursor: pointer;
+        display: block;
+        padding: 8px 50px;
+        border-radius: 5px;
+        border: none;
+        
     }
-
 
     
     &__info-post {
