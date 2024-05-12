@@ -1,10 +1,10 @@
 # Reach
 
 ### node version 
-*v18.15.0*
+*v20.11.0*
 
 ### npm version
-*8.12.0*
+*10.2.4*
 
 ## Tools
 
