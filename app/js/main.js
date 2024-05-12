@@ -10,9 +10,10 @@ textarea.addEventListener("keyup", e =>{
 
 textarea.style.height = "110px";
 
-let scHeight = e.target.scrollHeight; textarea.style.height = '${scHeight}px';
+let scHeight = e.target.scrollHeight; 
+textarea.style.height = `${scHeight}px`;
 
-})
+});
 
 event1.onclick = function(){
 
@@ -34,4 +35,28 @@ openModal.addEventListener('click', function(e){
 
 closeModal.addEventListener('click', () =>{
   Modal.classList.remove('active');
-})
+});
+
+
+
+const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  direction: 'vertical',
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+});

@@ -1,12 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vacancies</title>
+    <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-	Services
+    
+	<div class="wrapper">
+		<div class="header">
+			<div class="container header__container">
+				<div class="header__main">
+					<header class="header__head">
+						<div class="header__social header-social">
+							<ul class="header__item header-social__item">
+								<li class="header__item-work active">
+                                    <a href="index.html">Home page</a>
+                                </li>
+								<li class="header__item-work">
+									<a href="vacanc.html">Vacancies</a>
+								</li>
+								<li class="header__item-work">Messenger</li>
+								<li class="header__item-work">Notifications</li>
+							</ul>
+							<a href="#" class="header__logo">
+								<img src="images/logo.svg" alt="logo" width="120" height="28">
+							</a>
+							
+							<div class="header__search">
+								
+									<svg href="#" class="header__search-icon">
+										<use href="images/sprite.svg#first_icon"></use>
+									</svg>
+								
+								<input class="header__search-input" type="search" placeholder="Search">
+							</div>
+							<svg href="#" class="header__profile-icon">
+								<use href="images/sprite.svg#profile-icon"></use>
+							</svg>
+						</div>
+					</header>
+				</div>
+			</div>
+		</div>
+
+		<div class="swiper">
+			<!-- Additional required wrapper -->
+			<div class="swiper-wrapper">
+			  <!-- Slides -->
+			  <div class="swiper-slide">Slide 1</div>
+			  <div class="swiper-slide">Slide 2</div>
+			  <div class="swiper-slide">Slide 3</div>
+			  ...
+			</div>
+			<!-- If we need pagination -->
+			<div class="swiper-pagination"></div>
+		  
+			<!-- If we need navigation buttons -->
+			<div class="swiper-button-prev"></div>
+			<div class="swiper-button-next"></div>
+		  
+			<!-- If we need scrollbar -->
+			<div class="swiper-scrollbar"></div>
+		  </div>
+    </div>
+
+	<script src="js/main.min.js"></script>
 </body>
 </html>
