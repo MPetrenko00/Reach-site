@@ -2,7 +2,9 @@
     background: $white-color;
     box-shadow:  0 -7px 20px -10px rgba(136, 134, 134, 0.5);
 
-//&__container {}
+&__container {
+    padding: 0 50px;
+}
 
 &__main {
     min-height: 0;

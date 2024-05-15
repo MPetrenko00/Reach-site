@@ -2,8 +2,7 @@
 
     &__container{
         position: relative;
-        justify-content: column;
-        gap: 30px;
+        padding: 0 170px;
     }
 
     &__card-container{
@@ -22,11 +21,16 @@
     }
     
     &__card {
-        width: 480px;
+       width: 480px;
+       //width: 100%;
         height: 100%;
         padding: 20px;
-        background: $grey-alt-text;
+        background: $white-color;
         border-radius: 10px;
+
+        &:hover{
+            background: #FDFDFD;
+        }
     }
 
     &__card-header {
